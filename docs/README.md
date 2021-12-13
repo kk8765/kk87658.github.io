@@ -2,7 +2,7 @@
 home: true
 heroImage: kk.jpg
 actionText: 开始！
-actionLink: /blog/firstBlog.md
+actionLink: /blog/firstBlog/firstBlog.md
 # features:
 # - title: 简洁至上
 #   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
