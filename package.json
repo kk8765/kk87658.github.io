@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.0.2"
+  },
+  "dependencies": {
+    "jekyll": "^3.0.0-beta1"
   }
 }

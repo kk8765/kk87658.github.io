@@ -3,8 +3,7 @@ const head = require('./config/nav')
 module.exports = {
     base: '/',
     title: '我是张大王',
-    description: '这是一个尝试用vuepress搭建的个人博客',
-    base: '/',
+    description: '勿以小而不为，勿以难而不攻。',
     markdown: {
         lineNumbers: true // 代码块显示行号
     },
