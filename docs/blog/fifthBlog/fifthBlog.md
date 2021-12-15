@@ -1,6 +1,7 @@
 1.Array.prototype添加要重新写的方法，参数为传入的回调函数，然后for循环this（this指向的传入的数组），后两个都基于.forEach，所以把.forEach放在第一个。
 
    
+<pop/>
 
 ```javascript
  if(!Array.prototype.forEach){
