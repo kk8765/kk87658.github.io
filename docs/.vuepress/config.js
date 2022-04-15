@@ -9,8 +9,8 @@ const sideLink = newLink.map((item) => {
 
 module.exports = {
     base: '/',
-    title: '我是张大王',
-    description: '炽热坦诚，好运常在',
+    title: '我就是张',
+    description: '请安静',
     markdown: {
         lineNumbers: true // 代码块显示行号
     },
