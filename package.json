@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "d": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "d": "node --openssl-legacy-provider --no-deprecation ./node_modules/vuepress/cli.js dev docs",
+    "docs:build": "node --openssl-legacy-provider --no-deprecation ./node_modules/vuepress/cli.js build docs"
   },
   "keywords": [],
   "author": "",
