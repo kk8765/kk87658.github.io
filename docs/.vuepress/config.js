@@ -1,5 +1,5 @@
 const { head, nav, sidebar } = require('./config/nav')
-const newLink = require('./config/newLink')
+const newLink = require('./config/newLinkJs')
 const sideLink = newLink.map((item) => {
     return [
         item.link,
@@ -10,7 +10,7 @@ const sideLink = newLink.map((item) => {
 module.exports = {
     base: '/',
     title: '我是张大王',
-    description: '炽热坦诚，好运常在',
+    description: '日常记录',
     markdown: {
         lineNumbers: true // 代码块显示行号
     },

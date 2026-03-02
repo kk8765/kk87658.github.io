@@ -1,21 +1,31 @@
-const newLink = require('./newLink')
-const sideLink = newLink.map((item) => {
+const newLinkJsData = require('./newLinkJs')
+const sideLinkVueData = require('./newLinkVue')
+const sideLinkReactData = require('./newLinkReact')
+const sideLinkJs = newLinkJsData.map((item) => {
   return [
     item.link,
     item.text
   ]
 })
+const sideLinkVue = sideLinkVueData.map((item) => {
+  return [
+    item.link,
+    item.text
+  ]
+})
+const sideLinkReact = sideLinkReactData.map((item) => {
+  return [
+    item.link,
+    item.text
+  ]
+})
+
 module.exports = {
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: './kk.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
   nav: [
     {text: '主页', link: '/'},
-    {
-      text: '博客',
-      link: '/blog/firstBlog/firstBlog.md',
-      items: newLink
-    },
     {
       text: 'CSDN',
       items: [
@@ -27,8 +37,16 @@ module.exports = {
   sidebar: [
     ['/', '首页'],
     {
-      title: '我的博客',
-      children: sideLink
+      title: 'js',
+      children: sideLinkJs
+    },
+    {
+      title: 'vue',
+      children: sideLinkVue
+    },
+    {
+      title: 'react',
+      children: sideLinkReact
     }
 
   ]
